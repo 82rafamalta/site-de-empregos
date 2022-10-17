@@ -144,6 +144,7 @@ nav:after {
 }
 
 #search-form input[type="submit"],
+#sendjobs input[type="submit"],
 #sendjobs input[type="submit"] {
   background-color: #3381f3;
   text-transform: uppercase;
@@ -153,6 +154,7 @@ nav:after {
 }
 
 #search-form input[type="submit"]:hover,
+#sendjobs input[type="submit"]:hover,
 #sendjobs input[type="submit"]:hover {
   background-color: #2b79eb;
 }
@@ -618,6 +620,296 @@ footer .wrapper:after {
   margin-top: 40px;
 }
 
+/* find jobs page */
+#findjobs #search-form {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  width: 100%;
+  background-color: #3381f3;
+  border-top: 5px solid #0000e6;
+}
+
+#findjobs #lastjobs-container {
+  margin-top: 3em;
+}
+
+#search-form input,
+#search-form select {
+  width: 20%;
+}
+
+#findjobs #search-form input[type="submit"] {
+  background-color: #fff;
+  color: #3381f3;
+}
+
+#findjobs #search-form input[type="submit"]:hover {
+  background-color: #0000e6;
+  color: #fff;
+}
+
+#findjobs #lastjobs-container ul {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  margin-top: 0;
+}
+
+#type-filter {
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+#findjobs #type-filter ul {
+  margin: 0;
+  border-radius: 0;
+  border: 0;
+  background-color: #fff;
+  border-right: 1px solid #ccc;
+}
+
+#findjobs #type-filter ul li {
+  display: inline-block;
+  width: 20%;
+  height: 50px;
+  line-height: 50px;
+  border-bottom: none;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  padding-left: 1em;
+}
+
+#findjobs #type-filter ul li:nth-child(1),
+#findjobs #type-filter ul li:nth-child(2),
+#findjobs #type-filter ul li:nth-child(3) {
+  border-right: none;
+}
+
+#findjobs #type-filter label {
+  text-transform: uppercase;
+  color: #666;
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+
+/* sendjobs page */
+#sendjobs #sendjobs-container {
+  margin-top: 100px;
+  background: none;
+  padding: 5em 0;
+}
+
+#sendjobs h1 {
+  font-size: 36px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.input-box {
+  margin-bottom: 2em;
+  width: 50%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#sendjobs label {
+  text-transform: uppercase;
+  color: #666;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1em;
+}
+
+#sendjobs input,
+#sendjobs textarea,
+#sendjobs select {
+  padding: 20px 10px;
+  font-size: 18px;
+}
+
+#sendjobs input {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#sendjobs textarea,
+#sendjobs select {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#sendjobs input[type="submit"] {
+  width: 200px;
+  float: right;
+}
+
+.input-box:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* job page */
+#job-header {
+  width: 100%;
+  background-color: #fafafa;
+  border-bottom: 1px solid #ccc;
+  margin-top: 100px;
+  padding: 2em 0;
+}
+
+#job-header h1 {
+  font-size: 3em;
+  text-align: center;
+}
+
+#job-header .company-box {
+  width: 100%;
+}
+
+#job-header #job-info {
+  height: 100px;
+  width: 100%;
+  margin-top: 3em;
+  text-align: center;
+}
+
+#job-header #job-info div {
+  width: 25%;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  position: relative;
+  padding-left: 3em;
+  padding-right: 3em;
+  box-sizing: border-box;
+}
+
+#job-header #job-info .job-type {
+  padding-top: 5px;
+  margin-left: 12.5%;
+}
+
+#job-info .date i,
+#job-info .date p {
+  display: inline-block;
+  color: #666;
+}
+
+#job-info .date p {
+  margin-left: 10px;
+}
+
+#job-header #job-info div:nth-child(2) {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+#jobpage .wrapper {
+  padding: 2em 0;
+}
+
+#jobpage .wrapper:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+#job-container {
+  float: left;
+  width: 75%;
+  position: relative;
+}
+
+#jobpage .page-title {
+  font-size: 24px;
+  margin-bottom: 1.5em;
+}
+
+#jobpage .description {
+  margin-bottom: 1.5em;
+}
+
+#company-img {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+#companyinfo-container {
+  float: right;
+  width: 25%;
+  padding-top: 4em;
+  padding-left: 1.5em;
+  box-sizing: border-box;
+}
+
+.jobpage-list {
+  color: #666;
+  margin-bottom: 1.5em;
+  font-size: 1em;
+  line-height: 2em;
+}
+
+#companyinfo-container img {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #ccc;
+}
+
+#companyinfo-container .job-type {
+  display: block;
+  position: relative;
+  width: 100%;
+  padding: 2em 0;
+  border-bottom: 1px solid #ccc;
+}
+
+#apply-btn {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  margin-top: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: transparent;
+  border: 2px solid #3381f3;
+  color: #3381f3;
+  border-radius: 5px;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  transition: 0.5s;
+}
+
+#apply-btn:hover {
+  background-color: #3381f3;
+  color: #fff;
+}
+
+#job-social-list {
+  margin-top: 1em;
+  padding-left: 0;
+}
+
+#job-social-list li {
+  display: block;
+  list-style: none;
+  height: 50px;
+}
+
+#job-social-list li a {
+  text-decoration: none;
+  color: #666;
+}
+
 /* resposive */
 @media screen and (max-width: 1024px) {
   #logo {
@@ -670,6 +962,36 @@ footer .wrapper:after {
     max-width: 960px;
     padding-left: 2em;
     padding-right: 2em;
+  }
+
+  #findjobs #search-form input[type="submit"] {
+    margin-bottom: 0;
+  }
+
+  #findjobs #type-filter ul li {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+
+  #findjobs #type-filter ul li:last-child {
+    border-bottom: none;
+  }
+
+  /* job page */
+  #job-header #job-info div {
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 30%;
+  }
+
+  #jobpage .wrapper {
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+
+  #job-header #job-info .job-type {
+    margin-left: 5%;
   }
 }
 
@@ -860,6 +1182,56 @@ footer .wrapper:after {
     display: block;
     width: 100%;
   }
-}
 
-https: ; //www.youtube.com/watch?v=Yci4VSGlwos&list=PLnDvRpP8Bnez2LJGshXKtid2f-aUkFOqM&index=22
+  /* sendjobs page */
+  #sendjobs #sendjobs-container {
+    padding: 2em 9;
+  }
+
+  #sendjobs h1 {
+    font-size: 2em;
+    width: 60%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .input-box {
+    width: 80%;
+  }
+
+  /* job page */
+  #job-container {
+    width: 100%;
+  }
+
+  #companyinfo-container {
+    width: 100%;
+    padding-top: 0em;
+    padding-left: 0em;
+  }
+
+  #job-header {
+    margin-top: 4em;
+  }
+
+  #job-header .locality {
+    display: block;
+  }
+
+  #job-header #job-info div {
+    height: 100%;
+  }
+
+  #job-header #job-info .job-type {
+    padding-top: 35px;
+  }
+
+  #companyinfo-container .job-type {
+    right: 0;
+  }
+
+  #apply-btn {
+    margin-bottom: 3em;
+  }
+}
